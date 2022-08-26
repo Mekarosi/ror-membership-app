@@ -64,7 +64,9 @@ h1, h2, h3 {
     opacity: 0.65;
 }
 
-
+.navbar-light .navbar-brand {
+    color: #696969;
+}
 
 /*Home page Styles*/
 .home-callout {
