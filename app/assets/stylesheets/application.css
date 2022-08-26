@@ -16,7 +16,7 @@
 
 
 /*Background gradient*/
-body, .navbar {
+.navbar, .home-callout {
   /*Gradient provided by uiGradients.com*/
     background: #FFEFBA;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
@@ -28,3 +28,48 @@ body, .navbar {
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
+
+
+/*Navbar styles*/
+
+
+.navbar-brand {
+    color: dimgrey;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.navbar-brand:hover {
+     color: grey;
+    opacity: 0.65;
+}
+ 
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  background-color: #FFFEFF;  
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: dimgrey;
+}
+
+.nav-link {
+    color: dimgrey;
+}
+
+.nav-link:hover {
+    color: grey;
+    opacity: 0.65;
+}
+
+
+
+/*Home page Styles*/
+.home-callout {
+    color: dimgrey;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
