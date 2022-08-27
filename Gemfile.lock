@@ -93,6 +93,7 @@ GEM
       railties (>= 3.2, < 8.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    hirb (0.7.3)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.1.5)
@@ -231,6 +232,7 @@ DEPENDENCIES
   capybara
   debug
   font-awesome-rails
+  hirb (= 0.7.3)
   importmap-rails
   jbuilder
   pg (~> 1.4, >= 1.4.1)
