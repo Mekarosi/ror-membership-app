@@ -85,3 +85,7 @@ h1, h2, h3 {
     border: 2px solid #FFFDF6;
     background-color: #FFFEF9;
 }
+
+.alert  {
+    margin-top: 20px;
+}
