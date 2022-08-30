@@ -77,7 +77,7 @@ h1, h2, h3 {
 }
 
 
-/*contact form*/
+/*Contact form*/
 
 .row {
     justify-content: center;
@@ -86,6 +86,12 @@ h1, h2, h3 {
     background-color: #FFFEF9;
 }
 
+/*Alerts*/
+
 .alert  {
     margin-top: 20px;
+}
+
+.alert-notice {
+  display: none;
 }
