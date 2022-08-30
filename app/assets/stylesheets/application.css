@@ -17,7 +17,7 @@
 
 
 /*Background gradient*/
-.navbar, .home-callout {
+.navbar {
   /*Gradient provided by uiGradients.com*/
     background: #FFEFBA;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
@@ -77,6 +77,27 @@ h1, h2, h3 {
     
 }
 
+.home-signup-link{
+   margin-top: 30px;
+}
+
+.subscription-container {
+    width: auto;
+    height: auto;
+    background-color: #FCF4D0;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+}
+
+.subscription-heading {
+    padding: 20px;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    margin-bottom: 20px;
+}
+
+
 
 /*Contact form*/
 
@@ -95,4 +116,19 @@ h1, h2, h3 {
 
 .alert-notice {
   display: none;
+}
+
+
+/*media query*/
+
+@media screen and (min-width: 600px) {
+  .subscription-container  {
+     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .subscription-container  {
+     margin-bottom: 20px;
+  }
 }
