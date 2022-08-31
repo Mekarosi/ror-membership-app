@@ -118,6 +118,13 @@ h1, h2, h3 {
   display: none;
 }
 
+/*Sign up form*/
+
+.signup-text {
+  font-weight: bold;
+  color: darkblue;
+}
+
 
 /*media query*/
 
