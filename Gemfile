@@ -53,6 +53,8 @@ gem 'popper_js', '~> 2.11', '>= 2.11.5'
 
 gem 'jquery-rails', '~> 4.5'
 
+gem 'turbolinks'
+
 # Use Twitter bootstrap for front-end UI and layout
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
