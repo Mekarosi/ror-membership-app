@@ -5,7 +5,8 @@ $(document).on('turbolinks:load', function(){
   var submitBtn = $('#form-submit-btn');
   //Set Stripe public key.
   Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
-  //When user clicks form submit btn,
+
+  //When user clicks form submit btn
   submitBtn.click(function(event){
     //prevent default submission behavior.
     event.preventDefault();
@@ -15,6 +16,7 @@ $(document).on('turbolinks:load', function(){
         cvcNum = $('#card_code').val(),
         expMonth = $('#card_month').val(),
         expYear = $('#card_year').val();
+
     //Use Stripe JS library to check for card errors.
     var error = false;
     //Validate card number.
@@ -46,6 +48,7 @@ $(document).on('turbolinks:load', function(){
     }
     return false;
   });
+  
   //Stripe will return a card token.
   function stripeResponseHandler(status, response) {
     //Get the token from the response.
