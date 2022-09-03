@@ -97,6 +97,11 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
+a.btn.btn-success.btn-lg.btn-block, a.btn.btn-primary.btn-lg.btn-block {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /*Contact form*/
