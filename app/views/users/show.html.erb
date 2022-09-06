@@ -1,3 +1,4 @@
+<%= image_tag @user.profile.avatar if @user.profile.avatar.attached? %>
 <%= @user.profile.first_name %> <%= @user.profile.last_name %>
 <%= @user.profile.job_title %>
 <% if current_user.plan_id == 2 %>

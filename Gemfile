@@ -72,6 +72,8 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 # Use Stripe for payment processing
 gem 'stripe', '1.48.0'
 
+# For image analysis
+gem 'ruby-vips', '~> 2.0', '>= 2.0.7'
 
 # Use Figaro for ENV variables
 gem 'figaro'
