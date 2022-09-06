@@ -5,7 +5,21 @@
       </div>
       <div class="col-md-6">
          <h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
-         <h3><%= @user.profile.job_title %></h3>
+         <h3>
+            <span 
+               style="display: inline-block; 
+                      width: 35px; 
+                      height: 35px; 
+                      border: 2px solid #2E6DA4; 
+                      border-radius: 4PX; 
+                      background-color: #337ab7; 
+                      color: white; 
+                      text-align: center;
+                      margin-right: 5px;">
+            <%= job_title_icon %>
+                      
+            </span><%= @user.profile.job_title %>
+         </h3>
 
          
          <div  style="width: auto;
@@ -30,7 +44,7 @@
                       background-color: #5BC0DE;
                       color: white;
                       border-radius: 8px;
-                      padding: 10px;
+                      padding: 10px; text-align: ;
                       margin-top: 20px;"
 
          >
