@@ -1,1 +1,30 @@
-List all of our users
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<ul class="list-unstyled">
+				<% @users.each do |user| %>
+				   <% if user.profile %>
+				       <li class=" <%= cycle('blue-bg', '')  %>" style="background-color: ; ">
+				           <div class="card p-5">
+					           	<div class="col-sm-4 text-center">
+					           		<% if user.profile.avatar %>
+					           		    <%= link_to user do %>
+					           		     <%= image_tag user.profile.avatar, style: "border-radius: 50% ;" %>
+
+					           		    <% end %>
+					           		<% end %>	
+					           	</div>
+					           	<div>
+					           		<%= link_to user do %>
+					           		<h2><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
+					           		<% end %>
+					           		<p><%= user.profile.job_title %></p>
+					           	</div>
+				           </div>
+				       </li>
+				   <% end%>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -158,3 +158,7 @@ a.btn.btn-success.btn-lg.btn-block, a.btn.btn-primary.btn-lg.btn-block {
      margin-bottom: 20px;
   }
 }
+
+.user-index-avatar {
+    margin-bottom: 10px;
+}
