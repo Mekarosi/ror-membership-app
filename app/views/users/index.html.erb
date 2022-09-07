@@ -1,6 +1,8 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-8">
+			<h1 class="text-center">DevMatch Community</h1>
+			<p class="text-center">Welcome to DevMatch community! Users must fill out a profile in order to be visible in the community.</p>
 			<ul class="list-unstyled">
 				<% @users.each do |user| %>
 				   <% if user.profile %>
@@ -21,8 +23,11 @@
 					           		<p>
 					           			<%= user.profile.job_title %>
 					           		    <% if user.plan_id == 2 %>
-                                            <span class="badge badge-danger">PRO</span>
-					           		    <% end%>		
+                                            <span class="badge badge-danger">PRO</span>    
+					           		    <% end%>
+					           		    <% if user.plan_id == 1 %>
+                                            <span class="badge badge-warning">BASIC</span>
+                                        <% end%>		
 					           		</p>
 					           	</div>
 				           </div>
