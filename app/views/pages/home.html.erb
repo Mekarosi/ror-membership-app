@@ -1,6 +1,7 @@
 <div class='home-callout text-center container-fluid'>
    <h1>Welcome to DevMatch.</h1> 
    <h3>A membership site where entrepreneur can meet developers.</h3>
+   <%= image_tag 'image2.jpg', style: "width: 100% ; height: 50vh ; margin-bottom: -100px; " %>
 </div>
 <div class="container home-signup-link">
    <div class="row">
@@ -15,11 +16,11 @@
                       padding: 10px;">
                <h2 class="text-center">Your profile</h2>
                <% if current_user.profile %>
-                  <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id) , class: 'btn btn-default btn-lg btn-block' %>
-                  <%= link_to "View your profile", user_path(id:current_user.id), class: 'btn btn-default btn-lg btn-block' %>
+                  <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id) , class: 'btn btn-primary btn-lg btn-block' %>
+                  <%= link_to "View your profile", user_path(id:current_user.id), class: 'btn btn-secondary btn-lg btn-block' %>
                <% else %>
                   <p>Create your profile so the you can share your information with the community.</p>
-                   <%= link_to "Create your profile", new_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-lg btn-block' %>
+                   <%= link_to "Create your profile", new_user_profile_path(user_id: current_user.id), class: 'btn btn-secondary btn-lg btn-block' %>
                <% end %>   
             </div>
          </div>
@@ -32,7 +33,7 @@
                       padding: 10px;">
                <h2 class="text-center">The Community</h2>
                <p>Visit the community to meet other developers, entrepreneurs, and investors</p>
-               <%= link_to "Visit the community", users_path, class: 'btn btn-default btn-lg btn-block' %>
+               <%= link_to "Visit the community", users_path, class: 'btn btn-success btn-lg btn-block' %>
             </div>
          </div>
       <% else %>

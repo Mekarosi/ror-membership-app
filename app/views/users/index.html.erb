@@ -1,18 +1,17 @@
 <div class="container">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-6">
 			<h1 class="text-center">DevMatch Community</h1>
-			<p class="text-center">Welcome to DevMatch community! Users must fill out a profile in order to be visible in the community.</p>
+			<p class="text-center" style="font-weight: bold; font-size: 500; ">Welcome to DevMatch community! Users must fill out a profile in order to be visible in the community.</p>
 			<ul class="list-unstyled">
 				<% @users.each do |user| %>
 				   <% if user.profile %>
-				       <li class=" <%= cycle('blue-bg', '')  %>" style="background-color: ; ">
+				       <li class=" <%= cycle('blue-bg', '')  %>" style="margin-bottom: 20px; text-align: center; ">
 				           <div class="card p-5">
 					           	<div class="col-sm-4 text-center">
 					           		<% if user.profile.avatar %>
 					           		    <%= link_to user do %>
 					           		     <%= image_tag user.profile.avatar, style: "border-radius: 50% ;" %>
-
 					           		    <% end %>
 					           		<% end %>	
 					           	</div>
@@ -24,10 +23,10 @@
 					           			<%= user.profile.job_title %>
 					           		    <% if user.plan_id == 2 %>
                                             <span class="badge badge-danger">PRO</span>    
-					           		    <% end%>
-					           		    <% if user.plan_id == 1 %>
+					           		    <% else %>
+					           		    
                                             <span class="badge badge-warning">BASIC</span>
-                                        <% end%>		
+                                        <% end %>		
 					           		</p>
 					           	</div>
 				           </div>

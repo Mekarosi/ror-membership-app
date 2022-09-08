@@ -59,9 +59,10 @@
       <% end %>
       <div class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
-            <%= link_to "Log Out", "/users/sign_out", method: :delete, class: "btn btn-default navbar-btn" %>
+            <%= link_to "Log Out", "/users/sign_out", method: :delete, class: "btn btn-secondary btn-xs" %>
+        
         <% else %>
-            <%= link_to "Log In", new_user_session_path, class: "btn btn-default navbar-btn" %>
+            <%= link_to "Log In", new_user_session_path, class: "btn btn-secondary btn-xs" %>
         <% end %>
 </div>
     </ul>
